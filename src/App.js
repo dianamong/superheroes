@@ -66,7 +66,7 @@ function App() {
       <div className="superheroes">
       {
         heroes.map((hero) =>
-        <Hero name={hero.name} alterego={hero.alterego} business={hero.business} friends={hero.friends} superpowers={hero.superpowers} details={hero.details} picture={hero.picture} ></Hero>
+        <Hero key={hero.id} name={hero.name} alterego={hero.alterego} business={hero.business} friends={hero.friends} superpowers={hero.superpowers} details={hero.details} picture={hero.picture} ></Hero>
         )
       }
       </div>
